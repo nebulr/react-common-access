@@ -1,47 +1,21 @@
-# React Simple Translations
+# React Singleton Access
 
-Ability to add translations and get those translations based on a simple
-method of changing the language per a singleton object.
+Import accessor for whatever you want to put in it!
 
 ```
-import en_US from './en_US.json';
-import es_ES from './es_ES.json';
-import translation from 'react-simple-translations';
+import Singleton from 'react-singleton-access'
+import Components from './components';
+import Styles from './styles';
+import Constants from './constants';
 
-translation
-  .init({
-    language: 'en_US',
-    resources: {
-      en_US,
-      es_ES,
-      la_LA
-    }
-  })
-
-export default translation;
-
-... en_US.json
-
-{
-  "SOME_TRANSLATION": "hola foo bar"
-}
-
-... es_ES.json
-
-{
-  "SOME_TRANSLATION": "hello foo bar"
-}
+Singleton.Components = Components;
+Singleton.Styles = Styles;
+Singleton.Constants = Constants;
 
 ...
 
-import React, { Component } from 'react';
-import translation from 'react-simple-translations';
+import { Components, Styles, Constants } from 'react-singleton-access';
 
-export default class SomeView extends Component {
-  render() {
-    return (
-      <div>{ translation.get('SOME_TRANSLATION') }</div>
-    )
-  }
-}
+...
+
 ```
