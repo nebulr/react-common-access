@@ -1,4 +1,4 @@
-class Singleton {
+class Common {
 }
 
-export default new Singleton();
+export default new Common();

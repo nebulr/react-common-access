@@ -1,20 +1,19 @@
 {
-  "name": "react-singleton-access",
+  "name": "react-common-access",
   "version": "0.1.0",
   "author": "James A. Meyer",
   "license": "MIT",
-  "description": "Simple Singleton Accessor",
+  "description": "Simple Common Assets and Object Accessor",
   "main": "./src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nebulr/react-singleton-access.git"
+    "url": "https://github.com/nebulr/react-common-access.git"
   },
   "bugs": {
-    "url": "https://github.com/nebulr/react-singleton-access/issues"
+    "url": "https://github.com/nebulr/react-common-access/issues"
   },
-  "homepage": "https://github.com/nebulr/react-singleton-access#readme",
+  "homepage": "https://github.com/nebulr/react-common-access#readme",
   "dependencies": {
-    "deepmerge": "3.2.0",
     "react": "16.8.6"
   },
   "scripts": {

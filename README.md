@@ -1,20 +1,20 @@
-# React Singleton Access
+# React Common Access
 
 Import accessor for whatever you want to put in it!
 
 ```
-import Singleton from 'react-singleton-access'
+import Common from 'react-common-access'
 import Components from './components';
 import Styles from './styles';
 import Constants from './constants';
 
-Singleton.Components = Components;
-Singleton.Styles = Styles;
-Singleton.Constants = Constants;
+Common.Components = Components;
+Common.Styles = Styles;
+Common.Constants = Constants;
 
 ...
 
-import { Components, Styles, Constants } from 'react-singleton-access';
+import { Components, Styles, Constants } from 'react-common-access';
 
 ...
 
